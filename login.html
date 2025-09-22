@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+     <title>Login page</title>
+      <link rel="stylesheet" href="/authentication.css">
+ </head> 
+ <body>
+    <div class="login_section">
+        <div class="login_wrapper">
+            <div class="login_div">
+                <p>Login</p>
+            </div>
+            <form class="login_form" onsubmit="loginValidation(event)">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <button class="login_btn" type="submit">Login</button>
+            </form>
+            <p onclick="goToRegisterPage()">Don't you have an account? register </p>
+        </div>
+    </div>
+    <script src="/home.js"></script>
+ </body>
+</html>
